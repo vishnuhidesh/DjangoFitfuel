@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('logreg.urls')),
     path('dashboard/', include('dashboard.urls')),
-    path('editprofile/', include('userprofile.urls')),
+    path('', include('userprofile.urls')),
     path('', include('foodmodule.urls')),
 
 

@@ -3,7 +3,8 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path("", views.editProfileFunction)
-
+    path("editprofile/", views.editProfileFunction),
+    path("profile/", views.profileFunction)
+    
 
 ]
