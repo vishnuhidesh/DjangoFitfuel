@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,6 +24,7 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('', include('userprofile.urls')),
     path('', include('foodmodule.urls')),
+    path('',views.landingFunction)
 
 
 
