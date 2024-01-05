@@ -24,7 +24,8 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('', include('userprofile.urls')),
     path('', include('foodmodule.urls')),
-    path('',views.landingFunction)
+    path('',views.landingFunction),
+    path('navbar/',views.navbarFunction),
 
 
 
