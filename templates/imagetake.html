@@ -26,6 +26,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/dropzone-style.css' %}" rel="stylesheet" />
 
     
 
@@ -375,23 +376,24 @@
                 
                     <!-- <h2 class="mx-3">Image Scanning To Be Put Here</h2> -->
 
-                   <div class="container-fluid">
-                    <div class="frame">
-                        <div class="center">
-                            <div class="title">
-                                <h1>Click or Upload Image</h1>
-                            </div>
-                    
-                            <div class="dropzone">
-                                <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                                <input type="file" class="upload-input" />
-                            </div>
-                    
-                            <button type="button" class="btn" name="uploadbutton">Upload file</button>
-                    
+                   <div class="dropzone-wrapper">
+                    <form class="dropzone-box">
+                        <h2>Scan your food</h2>
+                        <p>for tracking</p>
+                        <div class="dropzone-area">
+                            <div class="file-upload-icon"></div>
+                            <p class="desktop-screen"><b>Click to upload or drag and drop</b></p>
+                            <p class="mobile-screen"><b>Take a photo or upload a picture</b></p>
+                            <input type="file" required id="upload-file" name="uploaded-file">
+                            <p class="message">No Files Selected</p>
                         </div>
-                    </div>
+                        <div class="dropzone-actions">
+                            <button type="reset">Cancel</button>
+                            <button id="submit-button" type="submit">Scan</button>
+                        </div>
+                    </form>
                    </div>
+                    
                     <!-- original pen: https://codepen.io/roydigerhund/pen/ZQdbeN  -->
                     
                     <!-- NO JS ADDED YET -->
@@ -452,6 +454,12 @@
 
     <!-- Custom scripts for all pages-->
     <script src='{% static "js/sb-admin-2.min.js" %}'></script>
+    
+    <!-- Custom scripts for dropzone-->
+    <script src='{% static "js/dropzone-script.js" %}'></script>
+    
+
+    
 
   
     
