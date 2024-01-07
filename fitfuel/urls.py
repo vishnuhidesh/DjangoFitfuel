@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('foodmodule.urls')),
     path('',views.landingFunction),
     path('navbar/',views.navbarFunction),
+    path('charts/',views.chartsFunction),
 
 
 
