@@ -27,6 +27,7 @@ urlpatterns = [
     path('',views.landingFunction),
     path('navbar/',views.navbarFunction),
     path('charts/',views.chartsFunction),
+    path('intake/',views.intakeFunction),
 
 
 

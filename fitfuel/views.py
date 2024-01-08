@@ -8,3 +8,6 @@ def navbarFunction(request):
 
 def chartsFunction(request):
     return render(request,'charts.html')
+
+def intakeFunction(request):
+    return render(request,'intake.html')

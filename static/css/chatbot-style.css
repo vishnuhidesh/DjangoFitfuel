@@ -176,7 +176,7 @@
     padding: 25px 16px;
     background: #2C50EF;
     width: 120px;
-    position: absolute;
+    position: fixed !important;
     bottom: 10%;
     right: 0;
     margin: 15px;
