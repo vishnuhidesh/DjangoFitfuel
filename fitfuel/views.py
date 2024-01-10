@@ -11,3 +11,12 @@ def chartsFunction(request):
 
 def intakeFunction(request):
     return render(request,'intake.html')
+
+def recommendFunction(request):
+    return render(request,'recommend.html')
+
+def healthFunction(request):
+    return render(request,'health.html')
+
+def blankFunction(request):
+    return render(request,'blank.html')

@@ -35,89 +35,94 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-                <!-- Sidebar -->
-                <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                    <!-- Sidebar - Brand -->
-                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
-                        <div class="sidebar-brand-icon">
-                            <img class="" src="{% static 'FF Green Black.png' %}" alt="" style="width: 50%;">
-        
-                        </div>
-                        <div class="sidebar-brand-text mx-3">FitFuel</div>
-                    </a>
-        
-                    <!-- Divider -->
-                    <hr class="sidebar-divider my-0">
-        
-                    <!-- Nav Item - Dashboard -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/dashboard">
-                            <i class="fas fa-fw fa-tachometer-alt"></i>
-                            <span>Dashboard</span></a>
-                    </li>
-        
-                    <!-- Divider -->
-                    <hr class="sidebar-divider">
-        
-                    
-        
-                    <!-- Nav Item - Pages Collapse Menu -->
-                    <li class="nav-item" style="cursor: pointer;">
-                        <a class="nav-link collapsed" href="/scan">
-                            <i class="fas fa-fw fa-cog"></i>
-                            <span>FoodLens.Ai</span>
-                        </a>
-                        
-                    </li>
-        
-                    <!-- Nav Item - Utilities Collapse Menu -->
-                    <li class="nav-item" style="cursor: pointer;">
-                        <a class="nav-link collapsed" href="/intellirec">
-                            <i class="fas fa-fw fa-wrench"></i>
-                            <span>IntelliRec</span>
-                        </a>
-                        
-                    </li>
-        
-                    <!-- Divider -->
-                    <hr class="sidebar-divider">
-        
-                    
-        
-                    <!-- Nav Item - Pages Collapse Menu -->
-                    <li class="nav-item" style="cursor: pointer;">
-                        <a class="nav-link" href="/health">
-                            <i class="fas fa-fw fa-folder"></i>
-                            <span>Health Analysis</span>
-                        </a>
-                        
-                    </li>
-        
-                    <!-- Nav Item - Charts -->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/charts">
-                            <i class="fas fa-fw fa-chart-area"></i>
-                            <span>Charts</span></a>
-                    </li>
-        
-                    <!-- Nav Item - Tables -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/intake">
-                            <i class="fas fa-fw fa-table"></i>
-                            <span>Intake</span></a>
-                    </li>
-        
-                    <!-- Divider -->
-                    <hr class="sidebar-divider d-none d-md-block">
-        
-                    <!-- Sidebar Toggler (Sidebar) -->
-                    <div class="text-center d-none d-md-inline">
-                        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-                    </div>
-        
-                </ul>
-                <!-- End of Sidebar -->
+
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
+                <div class="sidebar-brand-icon">
+                    <img class="" src="{% static 'FF Green Black.png' %}" alt="" style="width: 50%;">
+
+                </div>
+                <div class="sidebar-brand-text mx-3">FitFuel</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item" style="cursor: pointer;">
+                <a class="nav-link collapsed" href="/scan">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>FoodLens.Ai</span>
+                </a>
+                
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item" style="cursor: pointer;">
+                <a class="nav-link collapsed" href="/intellirec">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>IntelliRec</span>
+                </a>
+                
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active" style="cursor: pointer;">
+                <a class="nav-link" href="/health">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Health Analysis</span>
+                </a>
+                
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="/charts">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="/intake">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Intake</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -172,84 +177,18 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Charts</h1>
-                    <!-- <p class="mb-4">Here you</p> -->
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        
-                        <!-- Donut Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Today</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <br>
-                                    <span style="display: block; width: 100%; text-align: center;"><b>200 Calories</b> left of <b>2000 Calories</b> today.</span> <br>
-                                    <div class="choice-buttons" style="display: flex; align-items: center; justify-content: space-around;">
-                                    <a href="/scan" class="btn btn-primary btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-camera"></i>
-                                        </span>
-                                        <span class="text">Scan</span>
-                                    </a>
-
-                                    <a href="#" class="btn btn-success btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                        <span class="text">Add</span>
-                                    </a>
-
-                                </div>
-
-                                    <hr>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-7">
-
-                            <!-- Area Chart -->
-                            
-
-                            <!-- Bar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">This Month</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas id="myBarChart"></canvas>
-                                    </div>
-                                    <hr>
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Health Analysis</h1>
+               
                     </div>
 
+                    
+
                 </div>
-
-
-
-                <!--End of Begin Page Content -->
-                
+            
 
             </div>
             <!-- End of Main Content -->
@@ -387,8 +326,7 @@
 
 <!-- Page level custom scripts -->
 <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
-<script src="{% static 'js/demo/doughnut-chart.js' %}"></script>
-<script src="{% static 'js/demo/bar-chart.js' %}"></script>
+<script src="{% static 'js/demo/chart-pie-demo.js' %}"></script>
 <script src="{% static 'js/chatbot-script.js' %}"></script>
 
 
