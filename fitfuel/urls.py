@@ -24,7 +24,7 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('', include('userprofile.urls')),
     path('', include('foodmodule.urls')),
-    # path('diets/', include('diets.urls')),
+    path('diets/', include('diets.urls')),
     path('',views.landingFunction),
     path('navbar/',views.navbarFunction),
     path('charts/',views.chartsFunction),
